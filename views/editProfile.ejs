@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Edit Your Profile</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-info">
+    <div class="row">
+        <div class="col-md-6 offset-md-3" style="background-color: #fff;margin-top: 25px;padding:20px;">
+            <h3>Edit Your Profile (General Info)</h3>
+
+             <!-- Form for Inserting Publication -->
+<form action="/editProfile" method="POST" autocomplete="off">
+    <input type="hidden" name="_id">
+    <div class="form-group">
+        <label>Enrollment Number:</label>
+        <input type="text" class="form-control" name="CollegeEnrollmentNo" placeholder="College-EnrollmentNo"  />
+    </div>
+    <div class="form-group">
+        <label>Year Of Graduation:</label>
+        <input type="text" class="form-control" name="year" placeholder="Graduation Year"  />
+        
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>DOB:</label>
+            <input type="text" class="form-control" name="dob" placeholder="Date Of Birth"  />
+        </div>
+        <div class="form-group col-md-6">
+            <label>Gender</label>
+            <input type="text" class="form-control" name="keywords" placeholder="gender"  />
+        </div>
+        <div class="form-group col-md-6">
+            <label>Religion</label>
+            <input type="text" class="form-control" name="religion" placeholder=""  />
+        </div>
+        <div class="form-group col-md-6">
+            <label>Blood Group</label>
+            <input type="text" class="form-control" name="bloodgrp" placeholder=""  />
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <!-- <a class="btn btn-secondary" href="/list"><i class="fa fa-list-alt"></i> View All</a> -->
+    </div>
+</form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

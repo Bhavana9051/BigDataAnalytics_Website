@@ -1,0 +1,91 @@
+
+<!-- <h1>login</h1>
+
+<form action="/login" method="POST">
+	<input type="text" name="username"
+		placeholder="username">
+	<input type="password" name="password"
+		placeholder="password">
+	<button>login</button>
+</form>
+
+<h1>This is home page</h1>
+
+<li><a href="/register">Sign up!!</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/logout">Logout</a></li> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename= 'fonts/material-icon/css/material-design-iconic-font.min.css') }}">
+
+    <!-- Main css -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}"> -->
+    <!-- <link rel="stylesheet" href="/nocobot/static/images/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Sign in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <!-- <figure><img src="{{ url_for('static', filename= 'images/signin-image.jpg') }}" -->
+                        <figure><img src="signin-image.jpg"
+                                alt="Sign in image"></figure>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign In</h2>
+                        <div style="margin-bottom:10px">
+                            <label class="label-agree-term error_message" style="color: red;display: none;"></label>
+                        </div>
+                        <form action="/login" method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="password" placeholder="Password" />
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember
+                                    me</label>
+                            </div>
+                            <div class="form-button">
+                               <button name="signin" id="signin" class="form-submit">Login</button>
+                            </div>
+                            <!-- <div style="margin-top:5px;">
+                                <label class="label-agree-term" id="login_message" style="color: green;display: none;"></label>
+                            </div> -->
+                        </form>
+                        <div class="social-login">
+                            <a href="/register" class="signup-image-link">Create an account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    
+
+</body>
+    
+</html>

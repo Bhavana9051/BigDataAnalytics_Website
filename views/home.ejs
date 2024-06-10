@@ -1,0 +1,743 @@
+<!-- // home.ejs
+<h1>This is home page</h1>
+
+<li><a href="/register">Sign up!!</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/logout">Logout</a></li> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>BDA LAB 2023</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="iiita-img.png" type="image/x-icon">
+<link href="layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="framework.css" rel="stylesheet" type="text/css" media="all">
+<link href="fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+<!-- <script src="/nocobot/layout/scripts/login1.js"></script> -->
+
+</head>
+
+
+
+
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <div class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <ul class="nospace">
+        <li><i class="fas fa-phone rgtspace-5"></i>91-532-2922000</li>
+        <li><i class="far fa-envelope rgtspace-5"></i> contact@iiita.ac.in</li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </div>
+    <div class="fl_right"> 
+      <!-- ################################################################################################ -->
+      <ul class="nospace">
+        <!-- <li><a href="/nocobot/pages/login1.html"title="Login"><i class="fas fa-sign-in-alt"></i></a></li> -->
+        <li><a href="/login" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="/register" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+        <!-- <li><a href="/" title="Logout"><i class="fas fa-sign-out-alt"></i></a></li> -->
+        <!-- <li><a href="/logout">Logout</a></li> -->
+        <li id="searchform">
+          <div>
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Quick Search:</legend>
+                <input type="text" placeholder="Enter search term&hellip;">
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </fieldset>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('landmark_sky_iiita1.jpg');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <h1><a href="/home">BDA LAB 2023</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li class="active"><a href="/home">Home</a></li>
+          <li><a class="drop" href="#">pages</a>
+            <ul>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="full-width.html">Feedback</a></li>
+              <!-- <li><a href="sidebar-left.html">Submissions</a></li> -->
+              <!-- <li><a href="sidebar-right.html">Call For Participation</a></li> -->
+              <!-- <li><a href="pages/basic-grid.html"></a></li> -->
+              <!-- <li><a href="font-icons.html">Call for papers</a></li> -->
+            </ul>
+          </li>
+          <!-- <li><a class="drop" href="#">Dropdown</a>
+            <ul>
+              <li><a href="#">Level 2</a></li>
+              <li><a class="drop" href="#">Level 2 + Drop</a>
+                <ul>
+                  <li><a href="#">Level 3</a></li>
+                  <li><a href="#">Level 3</a></li>
+                  <li><a href="#">Level 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Level 2</a></li>
+            </ul>
+          </li> -->
+          <!-- <li><a href="#">Courses</a></li> -->
+          <li><a href="/allPublications">Publications</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <!-- <li><a href="/admin">Admin</a></li> -->
+          <li><a href="#" onclick="showAdminLogin()">Admin</a></li>
+
+<script>
+function showAdminLogin() {
+  var email = prompt("Enter admin email:");
+  var password = prompt("Enter admin password:");
+
+  if (email === 'seburds@gmail.com' && password === 'se@12345') {
+    // Admin credentials are correct, redirect to admin page
+    window.location.href = "/admin";
+  } else {
+    // Admin credentials are incorrect, display an error message
+    alert("Invalid admin credentials. Please try again.");
+  }
+}
+</script>
+
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="overlay">
+    <div id="pageintro" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <article>
+        <h3 class="heading">Big Data Analytics 2023</h3>
+        <p>Indian Institute Of Information Technology, Allahabad<br>Prayagraj, UP, INDIA</p>
+        <footer><a class="btn" href="https://bda.iiita.ac.in/">Visit past BDA LAB 2022</a></footer>
+      </article>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+
+
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    
+    <section id="introblocks">
+      <ul class="nospace group btmspace-80">
+        <li class="one_third first">
+          <figure><a class="imgover" href="#">
+            <!-- <img src="images/demo/348x400.png" alt=""> -->
+            <video src="bda-ani.mp4" style="WIDTH: 100%"; height:auto autoplay muted> </video>
+          </a>
+            <figcaption>
+              <h6 class="heading">BigData Analysis Lab</h6>
+              <div>
+                <p>BDA 2023 provides an international forum for researchers and industry practitioners to share their original research results,
+                  practical experiences and thoughts on big data from different perspectives. 
+                   The lab of BDA be organized by Indian Institute of Information Technology Allahabad, India. 
+                   All past BDA proceedings have been published by Springer's LNCS series. 
+                   We have also received approval for the proceedings of BDA 2021 to be published in Springer's 
+                   LNCS series.</p>
+                   <div style="border: 1px solid white; background-color: rgb(115, 244, 203);">
+                   <a href = "https://bda.iiita.ac.in" >BDA 2022 website </a>
+                  </div>
+                   <!-- <style>
+                    a:link{
+                      color:blue;
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
+                    a:visited{
+                      color:rgb(0, 47, 255);
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
+                    a.hover{
+                      color: #000;
+                      background-color: transparent;
+                      text-decoration: underline;
+                    }
+                    a.active{
+                      color:#000;
+                    }
+                   </style> -->
+                 <!-- </script> -->
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="#">
+            <!-- <img src="images/demo/348x400.png" alt=""></a> -->
+            <video src="lib-ani.mp4" style="WIDTH: 100%"; height:auto autoplay muted> </video>
+            </a>
+            <figcaption >
+              <h6 class="heading">IIIT ALLAHABAD</h6>
+              <div>
+                <p>Indian Institute of Information Technology, Allahabad (IIIT) was established in 1999 and was awarded the status of Deemed University status by the Government of India in 2000. 
+                  In 2014, the Ministry of Human Resource Development (MHRD) recognized IIIT Allahabad as 
+                  an “Institute of National Importance”. It is one of the nineteen IIITs listed by MHRD. </p>
+                  <div style="border: 1px solid white; background-color: rgb(115, 244, 203);">
+                    <a href = "https://iiita.ac.in" >IIITA WEBSITE </a>
+                   </div>
+                    <!-- <style>
+                     a:link{
+                      color:blue;
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
+                    a:visited{
+                      color:rgb(0, 47, 255);
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
+                    a.hover{
+                      color: #000;
+                      background-color: transparent;
+                      text-decoration: underline;
+                    }
+                    a.active{
+                      color:#000;
+                    }
+                    </style> -->
+                  
+               </div>
+            </figcaption>
+          </figure>
+        </li>
+         <li class="one_third">
+          <figure><a class="imgover" href="#">
+            <video src="prayag-ani.mp4" style="WIDTH: 100%"; height:auto autoplay muted> </video>
+            </a>
+            <figcaption>
+              <h6 class="heading">PRAYAGRAJ</h6>
+              <div>
+                <p>Allahabad, officially known as Prayagraj, also known as Ilahabad, is a metropolis in the Indian state of Uttar Pradesh. 
+                  It is the administrative headquarters of the Allahabad district—the most populous district in the state 
+                  and 13th most populous district in India—and the Allahabad division.</p>
+                  <div style="border: 1px solid white; background-color: rgb(115, 244, 203);">
+                    <a href = "https://en.wikipedia.org/wiki/Allahabad" >PRAYAGRAJ CITY </a>
+                   </div>
+              </div>
+            </figcaption>
+            
+          </figure>
+        </li> 
+         
+      </ul>
+    </section>
+    <hr class="btmspace-80">
+    <!-- devika part -->
+
+    <section class="group">
+      <div class="one_half first"><img class="inspace-15 borderedbox" src="https://tse2.mm.bing.net/th?id=OIP.t3wzLwxuea6RYC5FhVaEAwHaEL&pid=Api&P=0" alt=""></div>
+      <div class="one_half">
+        <ul class="nospace group inspace-15">
+          <li class="one_half first btmspace-50">
+            <article>
+              <h6 class="heading"><a href="https://rds.iiita.ac.in/PDF1/running.pdf">ongoing projects</a></h6>
+              <p class="nospace"> <ul><li>
+                Real Time Complex Event Processing and Analytics for Smart Buildings Modeling </li> <li>
+
+                simulation of environmental and occupational epidemiology data.</li></ul></p>
+            </article>
+          </li>
+          <li class="one_half btmspace-50">
+            <article>
+              <h6 class="heading"><a href="https://rds.iiita.ac.in/PDF1/Closed_project.pdf">Closed Projects</a></h6>
+              <p class="nospace"> <ul><li>
+                Big Data Analytics: Recent Trends and Applications</li><li>Micro and Nano-Electronic Devices and Technologies for Environmental Monitoring</li></ul></p>
+            </article>
+          </li>
+          <li class="one_half first">
+            <article>
+              <h6 class="heading"><a href="https://rds.iiita.ac.in/PDF1/Seedmoney_Project.pdf">Seed money Projects</a></h6>
+              <p class="nospace"><ul><li>Device-to-Circuit Integrated Design of ZnO TFT based Pixel Circuits on FLexible Substrates</li><li>Nanometer scaled Topological Insulators for future micro and opto electronic applications</li></ul></p>
+            </article>
+          </li>
+          <li class="one_half">
+            <article>
+              <h6 class="heading"><a href="https://rds.iiita.ac.in/PDF1/consultancy.pdf">Consultancy projects</a></h6>
+              <p class="nospace"> <ul><li>Annadatta Mahatta InfoTech (AMIT) Pvt. Ltd. Indore (MP)</li><li>Centre for short term Certification Programmes (CSTCP)</li></ul></p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+
+
+<!-- <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+  <figure class="hoc container clear imgroup"> 
+   
+    <figcaption class="sectiontitle">
+      <p class="nospace font-xs">Courses</p>
+      <p class="heading underline font-x2">Core parts of Courses Considered</p>
+    </figcaption>
+    <ul class="nospace group">
+      <li class="one_third"><a class="imgover" href="#"><img src="/images/demo/348x261.png" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a></li>
+    </ul>
+ 
+  </figure>
+ 
+  </section>
+</div> -->
+
+<div class="bgded overlay" style="background-image:url('https://wallpapercave.com/wp/wp6494463.jpg');">
+  <figure class="hoc container clear imgroup"> 
+    <!-- ################################################################################################ -->
+    <figcaption class="sectiontitle">
+      <!-- <p class="nospace font-xs">Courses Offered</p> -->
+      <p class="heading underline font-x2">Courses Offered</p>
+    </figcaption>
+    <ul class="nospace group">
+      <li class="one_third"><a class="imgover" href="https://as.iiita.ac.in/"><img src="https://tse1.mm.bing.net/th?id=OIP.HPq4qEPzslHG-T1Hs9YMGgHaES&pid=Api&P=0" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="https://ece.iiita.ac.in/"><img src="https://www.magazinesworld.org/wp-content/uploads/2020/08/electronics-and-communication-engineering.jpg" alt=" "></a></li>
+      <li class="one_third"><a class="imgover" href="https://it.iiita.ac.in/"><img src="https://tse3.mm.bing.net/th?id=OIP.lllwZVHtNXXkuxtCPLY6DgHaE8&pid=Api&P=0" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="https://mba.iiita.ac.in/"><img src="https://tse3.mm.bing.net/th?id=OIP.8cC6KXiJhJPUIBV1ejY41AHaEq&pid=Api&P=0" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="https://bioscience.iita.org/#:~:text=Bioscience%20Center%20at%20IITA%20is%20a%20major%20pillar,carry%20out%20cutting-edge%20applied%20research%20tailored%20to%20development"><img src="https://tse2.mm.bing.net/th?id=OIP.LKU809WE2ZDFdYpR3tpQlQHaEj&pid=Api&P=0" alt=""></a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </figure>
+  <!-- ################################################################################################ -->
+  
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+
+
+
+<div class="wrapper row2">
+  <div class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <!-- <p class="nospace font-xs">Vel lorem quis arcu euismod faucibus</p> -->
+      <p class="nospace font-xs">Faculty Incharge</p>
+      <p class="heading underline font-x2">Indian Institute Of Information Technology</p>
+    </div>
+    <ul class="nospace group team">
+      <li class="one_quarter first">
+        <figure><a class="imgover" href="#"><img src="sonali.jpeg" alt=""></a>
+          <figcaption><strong>ASSOSIATE PROFESSOR</strong> 
+            <a href="https://profile.iiita.ac.in/sonali/ ">Sonali Agarwal(PROFILE)</a>            
+            <!-- <em>Job Title Here</em> -->
+            </figcaption> 
+        </figure>
+      </li>
+      <li class="one_quarter">
+        <figure><a class="imgover" href="#"><img src="om.jpeg" alt=""></a>
+          <figcaption><strong>GUEST FACULTY</strong> 
+            <a href="https://www.zoominfo.com/p/Omkarendra-Tiwari/8141562839"> Omkarendra(PROFILE)</a>
+            <!-- <em>Job Title Here</em> -->
+          </figcaption>
+        </figure>
+      </li>
+      <li class="one_quarter">
+        <figure><a class="imgover" href="#"><img src="abhishek.jpeg" alt=""></a>
+          <figcaption><strong>ASSISTANT PROFESSOR</strong>
+            <a href="https://profile.iiita.ac.in/abhishek/">Abhishek(PROFILE)</a>
+             <!-- <em>Job Title Here</em> -->
+            </figcaption>
+        </figure>
+      </li>
+      <li class="one_quarter">
+        <figure><a class="imgover" href="#"><img src="kp-singh.jpeg" alt=""></a>
+          <figcaption><strong>HOD IT</strong>
+             <!-- <em>Job Title Here</em> -->
+             <a href="https://profile.iiita.ac.in/kpsingh/"> KP Singh(PROFILE)</a>
+            </figcaption>
+        </figure>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+
+
+
+<!-- <div class="wrapper row3">
+  <figure class="hoc container clear clients"> 
+   
+    <figcaption class="sectiontitle">
+      <p class="nospace font-xs">Projects</p>
+      <p class="heading underline font-x2">Sponsered Projects associated with lab</p>
+    </figcaption>
+    <ul class="nospace group">
+      <li class="one_quarter first"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter first"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+    </ul>
+    
+  </figure>
+</div> -->
+
+
+<div class="wrapper bgded overlay" style="background-image:url('https://placement.iiita.ac.in/images/iiita/campus2.jpg');">
+  <section id="testimonials" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <!-- <p class="nospace font-xs">Imperdiet at rhoncus vitae ante sed</p> -->
+      <!-- <p class="heading underline font-x2">Eu felis etiam et risus at</p> -->
+    </div>
+    <article class="btmspace-80">
+      <blockquote>A big data architecture is designed to handle the ingestion, processing, and analysis of data that is too large or complex for traditional database systems.</blockquote>
+      <!-- <figure class="clear"><img src="images/demo/60x60.png" alt=""> -->
+        <!-- <figcaption> -->
+          <!-- <h6 class="heading">John Doe</h6> -->
+          <!-- <em>CEO</em></figcaption> -->
+      <!-- </figure> -->
+    </article>
+    <!-- <footer class="center"><a class="btn" href="#">More Testimonials</a></footer> -->
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+<!-- <div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+  <section id="testimonials" class="hoc container clear"> 
+  
+    <div class="sectiontitle">
+      <p class="nospace font-xs">Imperdiet at rhoncus vitae ante sed</p>
+      <p class="heading underline font-x2">Eu felis etiam et risus at</p>
+    </div>
+    <article class="btmspace-80">
+      <blockquote>Pellentesque ipsum pede malesuada non vulputate at euismod et lorem nullam tincidunt urna eget nisl eleifend vulputate sed vitae risus sed enim fermentum venenatis sed augue eros tempor sit amet.</blockquote>
+      <figure class="clear"><img src="images/demo/60x60.png" alt="">
+        <figcaption>
+          <h6 class="heading">John Doe</h6>
+          <em>CEO</em></figcaption>
+      </figure>
+    </article>
+    <footer class="center"><a class="btn" href="#">More Testimonials</a></footer>
+   
+  </section>
+</div> -->
+
+
+
+<!-- <div class="wrapper row3">
+  <section class="hoc container clear"> 
+   
+    <div class="sectiontitle">
+      <p class="nospace font-xs">Felis dictum viverra mauris dui</p>
+      <p class="heading underline font-x2">Phasellus nunc erat cursus</p>
+    </div>
+    <ul id="latest" class="nospace group">
+      <li class="one_third first">
+        <article><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a>
+          <ul class="nospace meta clear">
+            <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+            <li><i class="fas fa-comments"></i> <a href="#">Comments (10)</a></li>
+          </ul>
+          <div class="excerpt clear">
+            <h6 class="heading">Aliquet tincidunt vel vulputate egestas leo</h6>
+            <time datetime="2045-04-05T08:15+00:00"><strong>05</strong> <em>Apr</em></time>
+            <p>Integer id justo ut diam suscipit laoreet quisque bibendum dolor at ultricies vestibulum risus&hellip;</p>
+          </div>
+          <footer><a class="btn" href="#">Read More</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a>
+          <ul class="nospace meta clear">
+            <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+            <li><i class="fas fa-comments"></i> <a href="#">Comments (10)</a></li>
+          </ul>
+          <div class="excerpt clear">
+            <h6 class="heading">Dui eleifend elit ac ullamcorper libero tellus</h6>
+            <time datetime="2045-04-04T08:15+00:00"><strong>04</strong> <em>Apr</em></time>
+            <p>Vel turpis quisque blandit metus ut tellus in mauris vivamus faucibus vivamus egestas lobortis&hellip;</p>
+          </div>
+          <footer><a class="btn" href="#">Read More</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a>
+          <ul class="nospace meta clear">
+            <li><i class="fas fa-user"></i> <a href="#">Admin</a></li>
+            <li><i class="fas fa-comments"></i> <a href="#">Comments (10)</a></li>
+          </ul>
+          <div class="excerpt clear">
+            <h6 class="heading">Odio curabitur id neque sed urna facilisis blandit</h6>
+            <time datetime="2045-04-03T08:15+00:00"><strong>03</strong> <em>Apr</em></time>
+            <p>Donec quis metus vel tortor porttitor pretium cras at justo nullam at lacus id metus pulvinar&hellip;</p>
+          </div>
+          <footer><a class="btn" href="#">Read More</a></footer>
+        </article>
+      </li>
+    </ul>
+   
+  </section>
+</div> -->
+
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <!-- <p class="nospace font-xs">Felis dictum viverra mauris dui</p> -->
+      <p class="heading underline font-x2">Invited Speakers</p>
+    </div>
+    <ul id="latest" class="nospace group">
+      <li class="one_third first">
+        <article><a class="imgover" href="https://uni-mysore.ac.in/assets/faculty_cv/dept_computer/nagabhusan-cv.pdf"><img src="https://timesofindia.indiatimes.com/thumb/msid-88828189,imgsize-23840,width-400,resizemode-4/88828189.jpg" alt=""></a>
+          <ul class="nospace meta clear">
+            <!-- <li><i class="fas fa-user"></i> <a href="#">Admin</a></li> -->
+            <!-- <li><i class="fas fa-comments"></i> <a href="#">Comments (10)</a></li> -->
+          </ul>
+          <div class="excerpt clear">
+            <h6 class="heading">Dr. P. NAGABHUSHAN
+              BE, MTech, PhD,
+              FIE, FIETE</h6>
+            <!-- <time datetime="2045-04-05T08:15+00:00"><strong>05</strong> <em>Apr</em></time> -->
+            <p>Proffessor in computer science and engineering, cheif nodal officer: choice based credit pattern continuous assessment education system, University Of Mysore, Mysore
+              </p>
+          </div>
+          <!-- <footer><a class="btn" href="#">Read More</a></footer> -->
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a class="imgover" href="https://sites.google.com/view/welcome-to-anils-world/Home?pli=1"><img src="https://tse1.mm.bing.net/th?id=OIP.F_cjbHSpmG8MLCj-CHnB6gHaFo&pid=Api&P=0" alt=""></a>
+          <ul class="nospace meta clear">
+            <!-- <li><i class="fas fa-user"></i> <a href="#">Admin</a></li> -->
+            <!-- <li><i class="fas fa-comments"></i> <a href="#">Comments (10)</a></li> -->
+          </ul>
+          <div class="excerpt clear">
+            <h6 class="heading">Associate Professor
+              Ph.D (IIT, Kharagpur)
+              Speech Processing Lab, IIIT Hyderabad</h6>
+            <!-- <time datetime="2045-04-04T08:15+00:00"><strong>04</strong> <em>Apr</em></time> -->
+            <p>Received the B.Tech degree in Electronics & Communication Engineering from the Jawaharlal  Nehru Technological University (JNTU), Andhra Pradesh, India, in 2005.</p>
+          </div>
+          <!-- <footer><a class="btn" href="#">Read More</a></footer> -->
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a class="imgover" href="https://www.isical.ac.in/~ash/"><img src="https://i.ytimg.com/vi/ambQuiLL4N8/hqdefault.jpg" alt=""></a>
+          <ul class="nospace meta clear">
+            <!-- <li><i class="fas fa-user"></i> <a href="#"></a></li> -->
+            <!-- <li><i class="fas fa-comments"></i> <a href="#">Comments (10)</a></li> -->
+          </ul>
+          <div class="excerpt clear">
+            <h6 class="heading">Dr. Ashish Ghosh, Fellow: IAPR, NASI, AAIA, WAST</h6>
+            <!-- <time datetime="2045-04-03T08:15+00:00"><strong>03</strong> <em>Apr</em></time> -->
+            <p>Project Director,  IDEAS-Technology Innovation Hub
+
+              Professor (HAG) &  former Head, Machine Intelligence Unit
+              
+              Former In-Charge, Center for Soft Computing Research.</p>
+          </div>
+          <!-- <footer><a class="btn" href="#">Read More</a></footer> -->
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+
+
+<!-- <div class="wrapper coloured">
+  <section id="ctdetails" class="hoc clear"> 
+    
+    <ul class="nospace clear">
+      <li class="one_quarter first">
+        <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> support@domain.com</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Monday - Saturday:</strong> 08.00am - 18.00pm</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span></div>
+      </li>
+    </ul>
+    
+  </section>
+</div> -->
+
+
+
+<!-- <div class="bgded overlay row4" style="background-image:url('images/demo/backgrounds/01.png');">
+  <footer id="footer" class="hoc clear"> 
+   
+    <div class="one_quarter first">
+      <h6 class="heading">Pellentesque dictum</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Ultricies in molestie sed</a></li>
+        <li><a href="#">Consectetuer nam sodales</a></li>
+        <li><a href="#">Euismod tellus sed non</a></li>
+        <li><a href="#">Est etiam in eros curabitur</a></li>
+        <li><a href="#">Viverra dui nec arcu sed</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Fermentum pellentesque</h6>
+      <p class="nospace btmspace-15">Pede ullamcorper facilisis bibendum nulla elit gravida elit vel suscipit urna.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Nisi nunc velit aliquam</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Sapien sit amet tortor nulla vulputate odio in varius tristique nisi urna.</a></p>
+            <time class="block font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Consequat erat id rutrum nisi magna vel tellus phasellus malesuada bibendum.</a></p>
+            <time class="block font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Lacinia iaculis nunc</h6>
+      <ul class="nospace clear latestimg">
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+      </ul>
+    </div>
+ 
+  </footer>
+</div> -->
+
+
+
+<!-- <div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </div>
+</div> -->
+
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+
+<div class="container23">
+  <div class="slide-container">
+    <div class="slide-images">
+      <img src="iiitalog.jpg" alt="">
+      <img src="springer.jpg" alt="">
+      <img src="iiid.jpg" alt="">
+      <img src="nitkur.jpg" alt="">
+      <img src="ahm.jpg" alt="">
+      <img src="iiitalog.jpg" alt="">
+      <img src="springer.jpg" alt="">
+      <img src="iiid.jpg" alt="">
+      <img src="nitkur.jpg" alt="">
+      <img src="ahm.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .container23 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-container {
+  width: 100%;
+  position: relative;
+}
+
+.slide-images {
+  display: flex;
+  animation: roll 20s linear infinite;
+}
+
+.slide-images img {
+  flex: 0 0 auto;
+  width: 20%;
+  height: auto;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+</style>
+  
+
+<!-- JAVASCRIPTS -->
+<script src="jquery.min.js"></script>
+<script src="jquery.backtotop.js"></script>
+<script src="jquery.mobilemenu.js"></script>
+</body>
+</html>

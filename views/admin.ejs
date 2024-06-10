@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    
+    .admin-heading {
+      font-size: 50px;
+      color: purple;
+      margin-top: 70px;
+    }
+    
+    .admin-buttons {
+      margin-top: 80px;
+    }
+    
+    .admin-buttons button {
+      font-size: 30px;
+      color: white;
+      background-color: purple;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .admin-buttons button:last-child {
+      margin-right: 0;
+    }
+
+    .admin-buttons button:hover {
+      background-color: #a83ed6;
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-heading">
+    ADMIN
+  </div>
+  
+  <div class="admin-buttons">
+    <button style="margin-right: 30px;" onclick="window.location.href='/userlist'">Notify Users</button>
+    <!-- <button></button> -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+<!-- <h1> Sign up form </h1>
+
+<form action="/register" method="POST">
+	<input type="text" name="username"
+		placeholder="username" required>
+	<input type="email" name="email" 
+	    placeholder="Email" required>
+	<input type="password" name="password"
+		placeholder="password">
+	<button>Submit</button>
+</form>
+
+<h1>This is home page</h1>
+
+<li><a href="/register">Sign up!!</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/logout">Logout</a></li> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename= 'fonts/material-icon/css/material-design-iconic-font.min.css') }}">
+
+    <!-- Main css -->
+    <!-- <link rel="stylesheet" href="{{ url_for('nocobot/static', filename= 'images/css/style.css') }}"> -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <div style="margin-bottom:10px">
+                            <label class="label-agree-term" id="error_message" style="color: red;display: none;"></label>
+                        </div>
+                        <form action="/register" method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="username" id="username" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="text" name="email" id="email" placeholder="Your Email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="password" placeholder="Password" />
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Repeat your password" />
+                            </div>
+                            <div class="form-group">
+                                <label for="userType"><i class="zmdi zmdi-accounts"></i></label>
+                                <input type="text" name="userType" id="userType" list="userTypes" placeholder="Select your user type">
+                                <datalist id="userTypes">
+                                  <option value="M.Tech">
+                                  <option value="PhD">
+                                  <option value="Professor">
+                                </datalist>
+                              </div>
+                              
+                            
+                            <div class="form-group">
+                                <label for="agree-term" class="label-agree-term">
+                                    <a href="/login" class="signup-image-link">I am already member</a>
+                                </label>
+                            </div>
+                            <div class="form-button">
+                                <!-- <input type="button" name="signup" id="signup" class="form-submit" onclick="register();" value="Register" /> -->
+                                <button name="signup" id="signup" class="form-submit">Register</button>
+								
+                            </div>
+                            <div style="margin-top:5px;">
+                                <label class="label-agree-term" id="signup_message" style="color: green;display: none;">Registeration Successfully</label>
+                            </div>
+                    
+                              
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <!-- <figure><img src="{{ url_for('static', filename= 'images/signup-image.jpg') }}" -->
+                        <figure><img src="signup-image.jpg"
+                                alt="sign up image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+</body>
+    
+</html>
+
+<!-- <script src="/nocobot/public/jquery.min.js"></script>
+        
+<script>
+    
+    $(document).ready(function() {
+        $('#register-form').submit(function(event) {
+            event.preventDefault();
+            $.ajax({
+                url: '/register',
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(response) {
+                    var data = JSON.parse(response);
+                    if (data == true){
+                        $('#signup_message').show(0).delay(3000).hide(0);
+
+                        setTimeout(function() {
+                            window.location = "/login";
+                        }, 3000);
+
+                    } else{                           
+                        $("#error_message").text("Email Id was already exists.");
+                        $("#error_message").show(0).delay(3000).hide(0);
+                    }
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        });
+    });
+
+
+
+</script> -->

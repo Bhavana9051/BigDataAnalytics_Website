@@ -1,0 +1,23 @@
+<!-- users.ejs -->
+<h1>Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% userlist.forEach(function(user) { %>
+      <tr>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td>
+          <a href="/<%= user._id %>/send-message">Send Message</a>
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>

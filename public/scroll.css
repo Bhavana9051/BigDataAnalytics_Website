@@ -1,0 +1,31 @@
+.container23 {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .slide-image {
+    display: flex;
+    width: max-content;
+    animation: roll 20s linear infinite;
+  }
+  
+  .slide-images img {
+    flex: 0 0 20%;
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/nocobot/layout/styles/register.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> -->
+    
+</head>
+<body>
+   
+    <h1>IIIT-A BDA LAB</h1>
+    <form action="" name="form1">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3 style="font-size:30px;">Sign Up</h3>
+            <p>Sign up to create your account</p>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <label for="admin">User</label>
+            <!-- <iNPUT type="text" placeholder="Enter user" name="user" required> -->
+                <select name="usertype"  id="user_type">
+                    <option value="student" style="height: 1000px;">--Select--</option>
+                      <option value="student" style="height: 1000px;">Student</option>
+                      <option value="admin" style="height: 1000px;">Admin</option>
+                </select>
+
+            <br><br>
+
+            <!-- Username
+            <label for="username" id="username">Your username</label>
+            <input type="text" placeholder="Enter Username" id="user_name" name="username" required> -->
+            <!-- <br><br> -->
+
+
+             <!-- Email -->
+             <label for="your_email" id="email">Your Email Id</label>
+            <input type="email" placeholder="Enter your Email" id="your_email" name="email" required />
+            <br>
+            <br>
+            <!-- onclick="ValidateEmail(document.form1.email)" required -->
+
+
+            <!-- Password -->
+            <label for="pswrd" >Your password</label>
+            <input type="password"  placeholder="Enter Password"id="pass_word" name="pswrd" required >
+            <!-- <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; right: -513px; top: -44px; color: brown;position: relative;"></i> -->
+            <!-- <br> -->
+            <br>
+            <!-- <br> -->
+            <!-- Confirm password -->
+            <label for="pswrd"> Confirm password</label>
+            <input type="password"  placeholder="Confirm Password"id="con_pass_word" name="pswrd" required>
+            <i class="far fa-eye" id="con_togglePassword" aria-hidden="true" style="margin-left: -30px; cursor: pointer; right: -513px; top: -44px; color: brown;position: relative;"></i>
+            <br>
+            <!-- Submit button -->
+            <button type="submit" id="register_btn" >Register</button>
+            <!-- onclick="javascript:validate()" -->
+
+            <!-- Sign up link -->
+            <!-- <button id="log_btn" class="an-btn" onclick="window.location.href='https://www.w3docs.com';" > <a href="/nocobot/pages/login1.html"> Already a member? LOGIN</a></button> -->
+            <p class="login" >Already a member?  <a href="/nocobot/pages/login1.html" id="log_btn">Login here!</a></p>
+
+
+            <script src="/nocobot/layout/scripts/register.js"></script>
+        </div>
+
+    </form>
+ 
+</body>
+</html>

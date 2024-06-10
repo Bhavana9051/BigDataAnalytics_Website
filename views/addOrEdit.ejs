@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Author Publication Form</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-info">
+    <div class="row">
+        <div class="col-md-6 offset-md-3" style="background-color: #fff;margin-top: 25px;padding:20px;">
+            <h3><%= viewTitle %></h3>
+
+             <!-- Form for Inserting Publication -->
+<form action="/addOrEdit" method="POST" autocomplete="off">
+    <input type="hidden" name="_id">
+    <div class="form-group">
+        <label>User Name</label>
+        <input type="text" class="form-control" name="username" placeholder="User Name" value="<%= publication.username %>" />
+        <div class="text-danger">
+            <%= publication.usernameError%>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" name="email" placeholder="Author Email" value="<%= publication.email %>" />
+        <div class="text-danger">
+            <%= publication.emailError %>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Topic</label>
+            <input type="text" class="form-control" name="topic" placeholder="Provide Topic." value="<%= publication.topic %>" />
+        </div>
+        <div class="form-group col-md-6">
+            <label>Keywords</label>
+            <input type="text" class="form-control" name="keywords" placeholder="Write 3 main Keywords for this Paper." value="<%= publication.keywords %>" />
+        </div>
+        <div class="form-group col-md-6">
+            <label>Upload Paper</label>
+            <input type="text" class="form-control" name="url" placeholder="Provide pdf URL" value="<%= publication.url %>" />
+            <div class="text-danger">
+                <%= publication.urlError %>
+            </div>
+        </div>
+        <!-- <div class="form-group col-md-6">
+            <label>Upload Paper</label>
+            <input type="file" id="file" class="form-control-file" name="Paper" accept="application/pdf" value=" <% publication.Paper %> " />
+            <div class="text-danger">
+                publication.fileError //ejs style.
+            </div>
+        </div> -->
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>
+
+        </div>
+    </div>
+
+    <script>
+        function fileValidation() {
+            var fileInput =
+                document.getElementById('file');
+             
+            var filePath = fileInput.value;
+         
+            // Allowing file type
+            var allowedExtensions =
+/(\.doc|\.docx|\.odt|\.pdf|\.tex|\.txt|\.rtf|\.wps|\.wks|\.wpd)$/i;
+             
+            if (!allowedExtensions.exec(filePath)) {
+                alert('Invalid file type');
+                fileInput.value = '';
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

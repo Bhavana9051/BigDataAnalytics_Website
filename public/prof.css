@@ -1,0 +1,177 @@
+body {
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+.student-profile .card {
+    border-radius: 10px;
+}
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+
+.student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.student-profile .card p {
+    font-size: 16px;
+    color: #000;
+}
+.student-profile .table th,
+.student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+    width: 45%;
+    height: 20%;
+}
+/* .btn1 {
+position: relative;
+width: 1500px;
+height: 50px;
+background-color: rgb(92, 183, 165);
+}
+.logout {
+    font-size: large;
+    color: blueviolet;
+
+}
+.btn1 :hover {
+    background-color: #000;
+    color: #67B26F;
+} */
+
+/* .logout-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+    width: 50%;
+    height: 75px;
+    background-color: #f8f9fa;
+  }
+  
+  .logoutBtn {
+    font-size: 50px;
+    padding: 50px 50px;
+    border: 2px blueviolet;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .logoutBtn a {
+    color: #fff;
+    text-decoration: none;
+  }
+   */
+  /* .logoutBtn:hover {
+    background-color: #495057;
+  } */
+
+  /* .publication-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .publicationBtn, .publ{
+    font-size: 24px;
+    padding: 10px 20px;
+    border: 2px solid blueviolet;
+    background-color: #fff;
+    color: blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .publicationBtn:hover {
+    background-color: blueviolet;
+    color: #fff;
+  }
+  
+  .logout-btn-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .logoutBtn {
+    font-size: 24px;
+    padding: 10px 20px;
+    border: 2px solid blueviolet;
+    background-color: #fff;
+    color: blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutBtn:hover {
+    background-color: blueviolet;
+    color: #fff;
+  } */
+
+  /* .btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .btn-wrap button {
+    margin-right: 10px;
+    width: 200px;
+    height: 100px;
+    color: white;
+  }
+  
+   */
+
+   .btn-wrap {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .btn-wrap .btn {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 13px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 22%;
+    cursor: pointer;
+  }
+  
+  .btn-wrap .btn:hover {
+    background-color: #495057;
+  }
+  
+  
